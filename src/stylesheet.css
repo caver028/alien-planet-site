@@ -1,0 +1,29 @@
+body {
+    font-size: 1rem;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
+header, footer {
+    background-color: #888888;
+    color: white;
+    padding: 1rem;
+}
+
+footer {
+    font-size: 1rem;
+    text-align: center;
+
+    div.contents {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+}
