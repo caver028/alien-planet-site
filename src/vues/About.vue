@@ -6,7 +6,7 @@ import PrimaryTemplate from "../templates/PrimaryTemplate.vue";
 
 <template>
   <primary-template header-img="gourd-trees.jpg">
-    <h1>This is my About page</h1>
+    <h1>About the Project</h1>
   </primary-template>
 </template>
 

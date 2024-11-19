@@ -9,15 +9,21 @@ header {
     font-size: clamp(2rem, 4vw, 4rem);
 }
 
+.left {
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
 header, footer {
-    background-color: #888888;
+    background-color: #3b3131;
     color: white;
     padding: 1rem;
 }
 
 footer {
     font-size: 1rem;
-    text-align: center;
 
     div.contents {
         display: flex;
@@ -25,5 +31,4 @@ footer {
         margin: 0 auto;
         justify-content: space-between;
     }
-
 }

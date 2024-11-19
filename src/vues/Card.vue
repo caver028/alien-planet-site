@@ -1,32 +1,25 @@
 <script setup>
 
 defineProps({
-  firstName: {
-    type: String,
-    required: true,
-  },
-  scientific_name: {
-    type: String,
-    required: false,
-  },
-  environment: {
-    type: String,
-    required: true,
+  alien: {
+    type: Object,
+    required: true
   }
 })
 </script>
 
 <template>
-  Alien Species: {{ firstName }}
-    <section class="card">
-      <aside class="left-side">
-        <div class="headshot"/>
-        <span class="environment">{{ environment }}</span>
-      </aside>
-      <aside class="right-side">
-        <div class="name">{{ scientific_name }}, {{ firstName }}</div>
-      </aside>
-    </section>
+  Alien Species: {{ alien.alien_name }}
+  <section class="card">
+    <aside class="left-side">
+      <div class="headshot"/>
+      <span class="environment">{{ alien.environment }}</span>
+    </aside>
+    <aside class="right-side">
+      <div class="name">{{ alien.size }}, {{ alien.color }}</div>
+      <router-link :to=" { name: 'AlienDetails', params: { id: alien.id } }">Learn more about this alien!</router-link>
+    </aside>
+  </section>
 </template>
 
 <style scoped>
@@ -38,8 +31,8 @@ section.card {
   padding: 0.5rem;
 
   &:hover {
-    border-color: black;
-    cursor: pointer;
+    //border-color: black;
+    //cursor: pointer;
   }
 
   .left-side, .right-side {
@@ -72,3 +65,4 @@ section.card {
   }
 }
 </style>
+

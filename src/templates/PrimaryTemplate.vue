@@ -12,7 +12,6 @@ import Alien from "../vues/Alien.vue";
   <section class="primary-template">
     <header>
       <div class="header-img" :style="'background-image: url(../src/assets/' + headerImg + ');'">
-        Virtual Voyage Redux
       </div>
 
       <nav>
@@ -28,8 +27,7 @@ import Alien from "../vues/Alien.vue";
     </section>
 
     <footer>
-      <div class="back-to-top">go to top of page</div>
-      <div class="copyright">This Year</div>
+      <div class="copyright">2024</div>
     </footer>
   </section>
 </template>
@@ -44,10 +42,10 @@ section.primary-template {
   header {
     div.header-img {
       border: 1px solid white;
-      background-repeat: repeat-x;
-      background-size: contain;
-      background-position: center center;
-      min-height: 35vh;
+      //background-repeat: repeat-y;
+      background-size: cover;
+      background-position: center;
+      min-height: 50vh;
     }
   }
 
@@ -71,9 +69,17 @@ section.primary-template {
         text-transform: uppercase;
         color: white;
         text-decoration: none;
+
+
+        &.router-link-active {
+          font-weight: bold;
+          text-decoration: underline;
+          background-color: purple;
+          border-color: white;
+          font-size: 105%
       }
 
-      a:hover {
+      &:hover {
         color: white;
         font-weight: bold;
       }
@@ -91,5 +97,6 @@ section.primary-template {
 header, footer {
   background-color: black;
   color: white;
-}
+}}
+
 </style>
