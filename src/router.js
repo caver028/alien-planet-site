@@ -3,6 +3,7 @@ import Home from "./vues/Home.vue";
 import About from "./vues/About.vue";
 import Alien from "./vues/Alien.vue";
 import AlienDetails from "./AlienDetails.vue";
+import AboutDesigner from "./vues/AboutDesigner.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,9 +20,14 @@ const router = createRouter({
             component: About
         },
         {
+            path: '/aboutdesigner',
+            name: 'AboutDesigner',
+            component: AboutDesigner
+        },
+        {
             path: '/alien',
             name: 'Alien',
-            // component: Alien,
+            component: Alien,
             children: [
                 {
                     name: "AlienDetails",
