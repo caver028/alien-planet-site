@@ -24,16 +24,14 @@ defineProps({
 
 <style scoped>
 section.card {
+  /* Mobile first */
   display: flex;
   border: 1px solid lightgray;
   border-radius: 10px;
+  width: 100%;
   gap: 1rem;
   padding: 0.5rem;
 
-  &:hover {
-    //border-color: black;
-    //cursor: pointer;
-  }
 
   .left-side, .right-side {
     display: flex;
@@ -49,11 +47,11 @@ section.card {
       height: 120px;
       width: 90px;
       background-color: lightgray;
-    }
 
-    .dob {
-      font-size: 0.8rem;
-      font-style: italic;
+      img{
+        width: 100%;
+        display: block;
+      }
     }
   }
 

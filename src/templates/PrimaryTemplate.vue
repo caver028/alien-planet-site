@@ -16,7 +16,7 @@ import Alien from "../vues/Alien.vue";
 
       <nav>
         <router-link :to="{ name: 'Home' }">Home</router-link>
-        <router-link :to="{ name: 'Alien'}">Alien</router-link>
+        <router-link :to="{ name: 'Alien' }">Alien</router-link>
         <router-link :to="{ name: 'About' }">About</router-link>
         <router-link :to="{ name: 'AboutDesigner' }">Designer</router-link>
       </nav>
@@ -98,6 +98,7 @@ section.primary-template {
 header, footer {
   background-color: black;
   color: white;
+  text-align: center;
 }}
 
 </style>
